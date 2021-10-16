@@ -56,7 +56,7 @@ const ScrollView = () => {
         }
       >
         {data.map((val, i) => (
-          <CardComponent val={val} ind={i} />
+          <CardComponent val={val} ind={i} key={i} />
         ))}
       </InfiniteScroll>
     </>
